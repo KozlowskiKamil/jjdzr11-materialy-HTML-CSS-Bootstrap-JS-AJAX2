@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100vw;
+    background-color: yellow;
+    height: 80px;
+}
+
+.row {
+    display: flex;
+    background-color: rgb(132, 132, 132);
+    margin: 12px auto;
+    width: 900px;
+}
+
+.box {
+    background-color: aqua;
+    height: 48px;
+    width: 48px;
+    margin: 6px;
+}
+
+/* Klasy do ostylowania za pomocą justify-content , align-items , flex-direction*/
+
+.row_1 {
+}
+
+.row_2 {
+}
+
+.row_3 {
+}
+
+.row_4 {
+    height: 360px;
+}

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100vw;
+    background-color: yellow;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+
+.row {
+    display: flex;
+    background-color: rgb(132, 132, 132);
+    margin: 12px auto;
+    width: 900px;
+}
+
+.box {
+    background-color: aqua;
+    height: 48px;
+    width: 48px;
+    margin: 6px;
+}
+
+.row_1 {
+    justify-content: center;
+}
+
+.row_2 {
+    justify-content: space-between;
+}
+
+.row_3 {
+    justify-content: space-evenly;
+}
+
+.row_4 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+}

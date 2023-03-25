@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Test site">
+      <meta name="keywords" content="Basic HTML">
+      <meta name="author" content="Jan Kowalski">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form</title>
+  </head>
+  <body>
+    <form>
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required />
+        <br/>
+
+        <label for="surname">Nazwisko:</label>
+        <input id="surname" type="text" name="surname" required />
+<!--        <input id="surname" type="password" name="surname" required />-->
+        <br/>
+
+        <p>Jaki środek transportu posiadasz?</p>
+
+        <label for="bike">Mam rower</label>
+        <input id="bike" type="checkbox" name="transport" value="bike" />
+        <br/>
+
+        <label for="car">Mam samochód</label>
+        <input id="car" type="checkbox" name="transport" value="car" />
+        <br/>
+
+        <label for="boat">Mam łódź</label>
+        <input id="boat" type="checkbox" name="transport" value="boat" />
+        <br/>
+
+        <label for="plane">Mam samolot</label>
+        <input id="plane" type="checkbox" name="transport" value="plane" />
+        <br/>
+
+        <p>Którą technologię znasz najlepiej?</p>
+
+        <label for="html">HTML</label>
+        <input id="html" type="radio" name="technology" value="html" />
+        <br/>
+
+        <label for="css">CSS</label>
+        <input id="css" type="radio" name="technology" value="css" />
+        <br/>
+
+        <label for="javascript">JavaScript</label>
+        <input id="javascript" type="radio" name="technology" value="javascript" />
+        <br/>
+        <label for="about">Opowiedz coś o sobie</label><br/>
+        <textarea id="about">
+
+        </textarea>
+        <br/>
+
+      <button>Wyślij</button>
+<!--      <input type="submit" value="Wyślij" />-->
+    </form>
+  </body>
+</html>

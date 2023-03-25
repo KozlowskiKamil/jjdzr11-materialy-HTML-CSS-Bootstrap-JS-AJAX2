@@ -1,0 +1,24 @@
+form {
+    border: 2px solid red;
+    padding: 10px;
+    color: gray;
+}
+
+input {
+    color: gray;
+    margin-bottom: 8px;
+}
+
+input[type="reset"],input[type="submit"] {
+    width: 80px;
+    margin-bottom: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+input[type="reset"] {
+    margin-left: 16px;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakresy</title>
+</head>
+<body>
+<script>
+  const foo = 'foo';
+
+  function bar() {
+
+    const foo = 'foo2';
+    // powiedz, jaki będzie wynik console loga i dlaczego
+    // console.log(foo)
+    {
+      const foo = 'foo3';
+    }
+
+    function nestedBar() {
+      const foo = 'foo3';
+      // powiedz jaki będzie wynik console loga i dlaczego
+      // console.log(foo)
+      {
+        // powiedz jaki będzie wynik console loga i dlaczego
+        // console.log(foo)
+        let foo = 'foo4';
+      }
+    }
+    nestedBar();
+  }
+
+  bar();
+
+  {
+    let foo = 'foo2';
+    // powiedz jaki będzie wynik console loga i dlaczego
+    // console.log(foo)
+  }
+
+  function baz() {
+    let foo = 'foo2';
+    // powiedz jaki będzie wynik console loga i dlaczego
+    // console.log(foo)
+  }
+
+  function bat() {
+    // powiedz jaki będzie wynik console loga i dlaczego
+    // console.log(foo)
+    let foo = 'foo2';
+  }
+
+  baz();
+  bat();
+
+  {
+    let foo = 'foo2';
+    function nestedBaz() {
+      let foo = 'foo3';
+    }
+    // powiedz jaki będzie wynik console loga i dlaczego
+    // console.log(foo)
+  }
+
+  // To wywołanie zadziała, ponieważ funkcja ignoruje zakresy blokowe jak var
+  nestedBaz();
+
+  // powiedz, jaki będzie wynik console loga i dlaczego
+  // console.log(foo)
+
+
+</script>
+</body>
+</html>

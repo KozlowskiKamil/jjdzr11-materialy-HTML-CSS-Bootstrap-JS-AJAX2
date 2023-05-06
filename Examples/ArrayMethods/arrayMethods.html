@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Array Methods</title>
+  </head>
+  <body>
+    <script>
+      const arrayOfNumbers = [1, 2, 3, 4, 5];
+
+      // wyświetlenie elementów
+      arrayOfNumbers.forEach(element => {
+        console.log(element);
+      });
+
+      // Ta pętla for poniżej da taki sam efekt jak ten forEach
+      // for (let i = 0; i < arrayOfNumbers.length; i++) {
+      //     console.log(arrayOfNumbers[i]);
+      // }
+
+
+      // mapowanie elementów
+      // Możemy np. każdy element przemnożyć przez 2
+
+      const mappedNumbers = arrayOfNumbers.map(element => {
+        return element * 2;
+      });
+
+      console.log(mappedNumbers);
+
+
+      // Działanie podobne jak map z tą różnicą że zamiast zwracać element po wykonanej operacji to callback ma za zadanie sprawdzić czy element jest do "odsiania"
+      const filteredNumbers = arrayOfNumbers.filter(element => {
+        return element > 3;
+      });
+
+      console.log(filteredNumbers);
+
+      const helperArr = [1, '2', true];
+
+      // Zwraca true / false i sprawdza, czy przynajmniej jeden element przechodzi pomyślną weryfikację
+      const isAnyNumber = helperArr.some(element => typeof element === "number" && !isNaN(element));
+
+      console.log(isAnyNumber)
+
+      // Zwraca true / false i sprawdza, czy każdy element przechodzi pomyślną weryfikację
+      const onlyNumbers = helperArr.every(element => typeof element === "number" && !isNaN(element));
+
+      console.log(onlyNumbers)
+    </script>
+  </body>
+</html>

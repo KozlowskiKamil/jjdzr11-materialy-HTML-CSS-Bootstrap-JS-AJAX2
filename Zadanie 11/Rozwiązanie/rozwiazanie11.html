@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Rozwiązanie 11</title>
+  </head>
+  <body>
+    <label for="todoInput">Todo item</label>
+    <input id="todoInput" type="text" />
+    <button id="addBtn">Add new Item</button><br/>
+
+    <div id="todoContainer">
+        Items:
+    </div>
+
+
+      <script>
+          const inputRef = document.getElementById("todoInput")
+          const buttonRef = document.getElementById("addBtn")
+          const containerRef = document.getElementById("todoContainer")
+
+          buttonRef.addEventListener("click", (event) => {
+              console.log(inputRef.value)
+
+              // sprawdzenie, czy wewnątrz inputa jest jakaś wartość
+             if (inputRef.value) {
+                  const paragraph = document.createElement("p");
+                  paragraph.innerHTML = inputRef.value
+                  containerRef.appendChild(paragraph);
+                  inputRef.value = null
+             }
+
+          })
+      </script>
+  </body>
+</html>

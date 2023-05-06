@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Events</title>
+    </head>
+    <body>
+        <a target="_blank" id="stackLink" href="https://stackoverflow.com/">Link do stacka</a>
+        <button onclick="myEventHandler(event)">Inline event</button>
+
+        <script>
+            function myEventHandler(e) {
+                console.log(e)
+                console.log("Event handler")
+            }
+
+            const linkRef = document.getElementById('stackLink');
+
+            linkRef.addEventListener("click", (event) => {
+                // Zablokowanie domyślnej akcji, w tym przypadku brak przeniesienia po kliku w link
+                // Jest to możliwe, tylko jeśli event ma właściwość cancelable: true -> dla każdego eventu można sprawdzić w dokumentacji
+                event.preventDefault();
+                console.log(event)
+            });
+        </script>
+    </body>
+</html>

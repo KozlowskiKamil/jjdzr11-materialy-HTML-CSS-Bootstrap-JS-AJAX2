@@ -6,7 +6,17 @@
   </head>
   <body>
     <script>
-      // Za pomocą prompt zadaj użytkownikowi pytanie: „Ile masz lat?”
+
+        const age = prompt("Ile masz lat?");
+
+        if (age >= 18) {
+            console.log("Jesteś pełnoletni/a");
+        } else {
+            console.log("Nie jesteś pełnoletni/a");
+        }
+
+
+        // Za pomocą prompt zadaj użytkownikowi pytanie: „Ile masz lat?”
       // Wykorzystując instrukcje warunkowe i metodę console.log() spraw, że:
       // Gdy odpowiedź użytkownika to 18 lub więcej w konsoli wypisz komunikat: „Jesteś pełnoletni/a”
       // Gdy odpowiedź użytkownika to mniej niż 18 wypisz w konsoli „Nie jesteś pełnoletni/a”

@@ -5,20 +5,59 @@
     <title>Zadanie 3</title>
 </head>
 <body>
-    <h1>Miejsce na Twój formularz</h1>
+<h1>Miejsce na Twój formularz</h1>
 
-    <!--    Tutaj stwórz formularz-->
-    <!--    Wymagane pola:-->
-    <!--    Login-->
-    <!--    Hasło-->
-    <!--    Wzrost-->
-    <!--    Data urodzenia-->
-    <!--    Czy palisz papierosy (tylko jedna odpowiedź jest dozwolona)-->
-    <!--    Zaznacz swoje zainteresowania-->
-    <!--    (wiele odpowiedzi spośród odpowiedzi jest prawidłowa: Sport, Sztuka, Muzyka, Programowanie, Gotowanie, Samochody, Moda, Zdrowy tryb życia)-->
-    <!--    Napisz coś o sobie (pole wielolinijkowe)-->
-    <!--    Na samym dole dodaj dwa przyciski z treścią ”Wyślij” oraz „Reset”-->
 
+<form>
+    <label for="login">login</label>
+    <input type="text" id="login" name="login" required/>
+    <label for="haslo">Hasło</label>
+    <input type="password" id="haslo" name="hasło"/> <br/>
+    <label for="wzrost">Wzrost</label>
+    <input type="number" id="wzrost" name="wzrost"/><br/>
+    <label for="data">Data urodzenia</label>
+    <input type="date" id="data" name="data"/><br/>
+
+    <label for="palisz">Palę papierosy</label>
+    <input type="radio" id="palisz" name="papierosy" value="yes"/>
+    <label for="niepalisz">Nie palę papierosów</label>
+    <input type="radio" id="niepalisz" name="papierosy" value="no"/>
+    <br/>
+    <br/>
+    <label for="sport">sport</label>
+    <input type="checkbox" id="sport" name="zainteresowania" value="sport"/>
+    <br/>
+    <label for="muzyka">muzyka</label>
+    <input type="checkbox" id="muzyka" name="zainteresowania" value="muzyka"/>
+    <br/>
+    <label for="programowanie">programowanie</label>
+    <input type="checkbox" id="programowanie" name="zainteresowania" value="programowanie"/>
+    <br/>
+    <label for="film">film</label>
+    <input type="checkbox" id="film" name="zainteresowania" value="film"/><br/>
+    <br/>
+
+    <textarea id="textarea" name="textarea" placeholder="Wpisz coś o sobie"></textarea>
+
+    <br/>
+    <button type="submit">Wyślij</button>
+    <button type="reset">Reset</button>
+
+
+</form>
+
+
+<!--    Tutaj stwórz formularz-->
+<!--    Wymagane pola:-->
+<!--    Login-->
+<!--    Hasło-->
+<!--    Wzrost-->
+<!--    Data urodzenia-->
+<!--    Czy palisz papierosy (tylko jedna odpowiedź jest dozwolona)-->
+<!--    Zaznacz swoje zainteresowania-->
+<!--    (wiele odpowiedzi spośród odpowiedzi jest prawidłowa: Sport, Sztuka, Muzyka, Programowanie, Gotowanie, Samochody, Moda, Zdrowy tryb życia)-->
+<!--    Napisz coś o sobie (pole wielolinijkowe)-->
+<!--    Na samym dole dodaj dwa przyciski z treścią ”Wyślij” oraz „Reset”-->
 
 
 </body>

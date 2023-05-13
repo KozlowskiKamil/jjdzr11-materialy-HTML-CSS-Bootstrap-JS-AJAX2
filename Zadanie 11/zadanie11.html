@@ -7,7 +7,60 @@
 
   </head>
   <body>
-<!--  Otwórz plik zadanie11.html-->
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Zadanie 11</title>
+  </head>
+  <body>
+  <label>
+      Dodaj nowe zadanie:
+      <input type="text" id="newTaskInput">
+  </label>
+  <button id="addTaskButton">Dodaj</button>
+  <ul id="taskList">
+      <!-- tutaj będą pojawiać się nowe elementy -->
+  </ul>
+  <script>
+      const addTaskButton = document.getElementById("addTaskButton");
+      const newTaskInput = document.getElementById("newTaskInput");
+      const taskList = document.getElementById("taskList");
+
+      addTaskButton.addEventListener("click", () => {
+          const newTask = document.createElement("li");
+          newTask.textContent = newTaskInput.value;
+          taskList.appendChild(newTask);
+          newTaskInput.value = "";
+      });
+  </script>
+  </body>
+  </html>
+
+
+
+
+  <label>To do</label>
+  <input type="text" id="todo">
+<button id="addBtn">add</button>
+
+  <div id="container"></div>
+
+
+  <script>
+      const inputref = document.getElementById("todo")
+      const buttonRef = document.getElementById("addBtn")
+      const contRef = document.getElementById("container")
+
+      buttonRef.addEventListener("click", () => {
+          console.log(inputref.value)
+      } )
+
+
+  </script>
+
+  <!--  Otwórz plik zadanie11.html-->
 <!--  Utwórz input typu tekstowego-->
 <!--  Utwórz przycisk i dodaj do niego obsługę zdarzenia click-->
 <!--  Po kliknięciu w przycisk w kontenerze poniżej ma się dodać tekst z inputa jako nowy element (TODO list)-->

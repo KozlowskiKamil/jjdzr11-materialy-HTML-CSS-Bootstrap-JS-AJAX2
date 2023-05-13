@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Zadanie 4</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!--    Tutaj skopiuj kod formularza i ostyluj go-->
@@ -19,5 +20,45 @@
 <!--Odstęp wertykalny (pionowy) między inputami musi wynosić co najmniej 8px-->
 
 <!--Kolor tekstu w całym formularzu musi być szary-->
+<h1>Miejsce na Twój formularz</h1>
+
+
+<form id="formularz">
+    <label for="login">login</label>
+    <input class="inputy" type="text" id="login" name="login" required/><br/>
+    <label for="haslo">Hasło</label>
+    <input class="inputy" type="password" id="haslo" name="hasło"/> <br/>
+    <label for="wzrost">Wzrost</label>
+    <input class="inputy" type="number" id="wzrost" name="wzrost"/><br/>
+    <label for="data">Data urodzenia</label>
+    <input class="inputy" type="date" id="data" name="data"/><br/>
+
+    <label for="palisz">Palę papierosy</label>
+    <input class="inputy" type="radio" id="palisz" name="papierosy" value="yes"/>
+    <label for="niepalisz">Nie palę papierosów</label>
+    <input class="inputy" type="radio" id="niepalisz" name="papierosy" value="no"/>
+    <br/>
+    <br/>
+    <label for="sport">sport</label>
+    <input class="inputy" type="checkbox" id="sport" name="zainteresowania" value="sport"/>
+    <br/>
+    <label for="muzyka">muzyka</label>
+    <input class="inputy" type="checkbox" id="muzyka" name="zainteresowania" value="muzyka"/>
+    <br/>
+    <label for="programowanie">programowanie</label>
+    <input class="inputy" type="checkbox" id="programowanie" name="zainteresowania" value="programowanie"/>
+    <br/>
+    <label for="film">film</label>
+    <input class="inputy" type="checkbox" id="film" name="zainteresowania" value="film"/><br/>
+    <br/>
+
+    <textarea id="textarea" name="textarea" placeholder="Wpisz coś o sobie"></textarea>
+
+    <br/>
+    <button class="buttonS" type="submit">Wyślij</button>
+    <button class="buttonR" type="reset">Reset</button>
+
+
+</form>
 </body>
 </html>

@@ -1,0 +1,27 @@
+body {
+    background: lightgray;
+
+}
+
+#formularz {
+    border: 2px solid red;
+    padding: 10px;
+    color: coral;
+}
+
+.buttonS {
+    width: 80px;
+    margin-right: 16px;
+}
+
+.buttonS:hover {
+    background: blue
+}
+
+.buttonR {
+    width: 80px;
+    margin-right: 16px;
+}
+.inputy{
+    margin-bottom: 8px;
+}

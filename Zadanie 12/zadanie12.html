@@ -7,6 +7,31 @@
 
   </head>
   <body>
+  <button id="pobierzDane">Pobierz dane</button>
+  <div id="wyniki"></div>
+
+  <script>
+      const button = document.getElementById('pobierzDane');
+      const wynikiDiv = document.getElementById('wyniki');
+
+      button.addEventListener('click', () => {
+          fetch('https://swapi.dev/api/planets')
+              .then(response => response.json())
+              .then(data => {
+                  const wyniki = data.results.map(planet => {
+                      return `
+							<p><strong>Nazwa:</strong> ${planet.name}</p>
+							<p><strong>Klimat:</strong> ${planet.climate}</p>
+							<p><strong>Populacja:</strong> ${planet.population}</p>
+							<hr>
+						`;
+                  }).join('');
+
+                  wynikiDiv.innerHTML = wyniki;
+              })
+              .catch(error => console.error(error));
+      });
+  </script>
 <!--  Otwórz plik zadanie12.html-->
 <!--  Utwórz przycisk i dodaj mu obsługę zdarzenia click-->
 <!--  Po kliknięciu, w przycisk pobierz dane z tego adresu url: https://swapi.dev/api/planets-->
